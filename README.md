@@ -22,7 +22,7 @@ When creating a Comment Count just add the shortname and config object from a Ja
 
 For example. From this code:
 ```javascript
-var myShortName = 'disqusShortname';
+var myShortName = 'http://home.myurl';
 var myConfigObject = {
     identifier: '/path/to/whenever',
     url: 'myurl'
@@ -62,7 +62,7 @@ Basic Usage:
     function disqus() {
       return {
         config: { 
-          url: `myurl`, 
+          url: `http://home.myurl`, 
           identifier: `path/to/document`
       }
       }
