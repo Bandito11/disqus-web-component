@@ -7,13 +7,13 @@
 
 How to use:
 
-You can ```npm install disqus-web-component``` in your local project and add it to the head of the index.html file like so:
+You can ```npm install web-component-disqus``` in your local project and add it to the head of the index.html file like so:
 
-<script src="node_modules/disqus-web-component/dist/disqus.js"></script>
+<script src="node_modules/web-component-disqus/dist/disqus.js"></script>
 
 or just add it from UNPKG with local installation required:
 
-<script src="https://unpkg.com/disqus-web-component@0.0.1/dist/disqus.js"></script>
+<script src="https://unpkg.com/web-component-disqus@0.0.1/dist/disqus.js"></script>
 
 
 # How to use
@@ -45,7 +45,7 @@ Basic Usage:
 
 ```html
 <head>
-  <script src="https://unpkg.com/disqus-web-component@0.0.1/dist/disqus.js"></script>
+  <script src="https://unpkg.com/web-component-disqus@0.0.1/dist/disqus.js"></script>
 </head>
 
 <body>
