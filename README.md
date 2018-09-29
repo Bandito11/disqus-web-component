@@ -18,7 +18,7 @@ or just add it from UNPKG with local installation required:
 
 # How to use
 
-When creating a Comment Count just add the shortname and config from any variable or object created in a JavaScript
+When creating a Comment Count just add the shortname and config object from a JavaScript
 
 For example. From this code:
 ```javascript
@@ -30,14 +30,14 @@ var myConfigObject = {
 ```
 
 ```html
-    <disqus-comment-count shortname="myShortname" config="myConfigObject">
+    <comment-count shortname="myShortname" config="myConfigObject">
       <p>Comments</p>
-    </disqus-comment-count>
+    </comment-count>
 ```
 
 If on the same page you can just reuse the variable and object used above
 ```html
-    <disqus-discussion-embed shortname="myShortname" config="myConfigObject" />
+    <discussion-embed shortname="myShortname" config="myConfigObject" />
 ```
 
 
@@ -51,10 +51,10 @@ Basic Usage:
 <body>
 
   <div id='disqus-commentary'>
-    <disqus-comment-count shortname="shortname" config="disqus()">
+    <comment-count shortname="shortname" config="disqus()">
       <p>Comments</p>
-    </disqus-comment-count>
-    <disqus-discussion-embed shortname="banditotr" config="disqus()" />
+    </comment-count>
+    <discussion-embed shortname="banditotr" config="disqus()" />
   </div>
 
   <script>

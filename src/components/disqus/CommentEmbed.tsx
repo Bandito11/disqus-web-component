@@ -2,7 +2,7 @@ const RADIX_BASE = 36;
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-    tag: 'disqus-comment-embed'
+    tag: 'comment-embed'
 })
 
 export class CommentEmbed {

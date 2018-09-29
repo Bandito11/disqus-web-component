@@ -9,7 +9,7 @@ const queueResetCount = debounce(() => {
 
 
 @Component({
-    tag: 'disqus-comment-count'
+    tag: 'comment-count'
 })
 export class CommentCount {
 

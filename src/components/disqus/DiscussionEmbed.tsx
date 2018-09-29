@@ -3,7 +3,7 @@ import { insertScript, removeScript } from './utils';
 import { Component, Prop, Watch } from '@stencil/core';
 declare const window;
 @Component({
-    tag: 'disqus-discussion-embed'
+    tag: 'discussion-embed'
 })
 
 export class DiscussionEmbed {
