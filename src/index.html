@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+
+  <script src="/build/disqus.js"></script>
+
+</head>
+
+<body>
+
+  <div id='disqus-commentary'>
+    <disqus-comment-count shortname="shortname" config="disqus">
+      <p>Comments</p>
+    </disqus-comment-count>
+    <disqus-discussion-embed shortname="banditotr" config="disqus" />
+  </div>
+
+  <script>
+    var shortname = 'banditotr';
+    function disqus() {
+      return {
+        config: { 
+          url: `http://www.banditotr.com`, 
+          identifier: `/blogid/${this.match.params.blogid}/title/${this.blog.title}`, 
+          title: this.match.params.title }
+      }
+    }
+  </script>
+</body>
+
+</html>
