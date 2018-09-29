@@ -22,7 +22,7 @@ When creating a Comment Count just add the shortname and config object from a Ja
 
 For example. From this code:
 ```javascript
-var myShortName = 'diqusShortname';
+var myShortName = 'disqusShortname';
 var myConfigObject = {
     identifier: '/path/to/whenever',
     url: 'myurl'
@@ -54,17 +54,17 @@ Basic Usage:
     <comment-count shortname="shortname" config="disqus()">
       <p>Comments</p>
     </comment-count>
-    <discussion-embed shortname="banditotr" config="disqus()" />
+    <discussion-embed shortname="shortname" config="disqus()" />
   </div>
 
   <script>
-    var shortname = 'banditotr';
+    var shortname = 'myDisqusShortName';
     function disqus() {
       return {
         config: { 
-          url: `http://www.banditotr.com`, 
-          identifier: `/blogid/${this.match.params.blogid}/title/${this.blog.title}`, 
-          title: this.match.params.title }
+          url: `myurl`, 
+          identifier: `path/to/document`
+      }
       }
     }
   </script>
