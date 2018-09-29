@@ -15,7 +15,7 @@
     <comment-count shortname="shortname" config="disqus">
       <p>Comments</p>
     </comment-count>
-    <discussion-embed shortname="banditotr" config="disqus" />
+    <discussion-embed shortname="shortname" config="disqus" />
   </div>
 
   <script>
@@ -23,9 +23,9 @@
     function disqus() {
       return {
         config: { 
-          url: `http://www.banditotr.com`, 
-          identifier: `/blogid/${this.match.params.blogid}/title/${this.blog.title}`, 
-          title: this.match.params.title }
+          url: `http://home.myurl`, 
+          identifier: `/path/to/whenever`
+        }
       }
     }
   </script>
