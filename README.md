@@ -22,10 +22,10 @@ When creating a Comment Count just add the shortname and config object from a Ja
 
 For example. From this code:
 ```javascript
-var myShortName = 'http://home.myurl';
+var myShortName = 'MyDisqusShortname';
 var myConfigObject = {
     identifier: '/path/to/whenever',
-    url: 'myurl'
+    url: 'http://home.myurl'
 }
 ```
 
