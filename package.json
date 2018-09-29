@@ -19,14 +19,26 @@
   "devDependencies": {
     "@stencil/core": "~0.13.2"
   },
+  "unpkg": "dist/disqus.js",
+  "keywords": [
+    "stencil",
+    "mobile",
+    "app",
+    "webapp",
+    "cordova",
+    "progressive web app",
+    "pwa",
+    "web",
+    "web component"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bandito11/stencil-component-starter.git"
+    "url": "git+https://github.com/Bandito11/web-component-disqus.git"
   },
-  "author": "Ionic Team",
+  "author": "Esteban Morales",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
+    "url": "https://github.com/Bandito11/web-component-disqus"
   },
-  "homepage": "https://github.com/ionic-team/stencil"
+  "homepage": "https://github.com/Bandito11/web-component-disqus"
 }
