@@ -12,23 +12,23 @@ import '@stencil/core';
 
 export namespace Components {
 
-  interface DisqusCommentCount {
+  interface CommentCount {
     'config': any;
     'shortname': any;
   }
-  interface DisqusCommentCountAttributes extends StencilHTMLAttributes {
+  interface CommentCountAttributes extends StencilHTMLAttributes {
     'config'?: any;
     'shortname'?: any;
   }
 
-  interface DisqusCommentEmbed {
+  interface CommentEmbed {
     'commentId': any;
     'height': any;
     'showMedia': any;
     'showParentComment': any;
     'width': any;
   }
-  interface DisqusCommentEmbedAttributes extends StencilHTMLAttributes {
+  interface CommentEmbedAttributes extends StencilHTMLAttributes {
     'commentId'?: any;
     'height'?: any;
     'showMedia'?: any;
@@ -36,11 +36,11 @@ export namespace Components {
     'width'?: any;
   }
 
-  interface DisqusDiscussionEmbed {
+  interface DiscussionEmbed {
     'config': any;
     'shortname': string;
   }
-  interface DisqusDiscussionEmbedAttributes extends StencilHTMLAttributes {
+  interface DiscussionEmbedAttributes extends StencilHTMLAttributes {
     'config'?: any;
     'shortname'?: string;
   }
@@ -48,46 +48,46 @@ export namespace Components {
 
 declare global {
   interface StencilElementInterfaces {
-    'DisqusCommentCount': Components.DisqusCommentCount;
-    'DisqusCommentEmbed': Components.DisqusCommentEmbed;
-    'DisqusDiscussionEmbed': Components.DisqusDiscussionEmbed;
+    'CommentCount': Components.CommentCount;
+    'CommentEmbed': Components.CommentEmbed;
+    'DiscussionEmbed': Components.DiscussionEmbed;
   }
 
   interface StencilIntrinsicElements {
-    'disqus-comment-count': Components.DisqusCommentCountAttributes;
-    'disqus-comment-embed': Components.DisqusCommentEmbedAttributes;
-    'disqus-discussion-embed': Components.DisqusDiscussionEmbedAttributes;
+    'comment-count': Components.CommentCountAttributes;
+    'comment-embed': Components.CommentEmbedAttributes;
+    'discussion-embed': Components.DiscussionEmbedAttributes;
   }
 
 
-  interface HTMLDisqusCommentCountElement extends Components.DisqusCommentCount, HTMLStencilElement {}
-  var HTMLDisqusCommentCountElement: {
-    prototype: HTMLDisqusCommentCountElement;
-    new (): HTMLDisqusCommentCountElement;
+  interface HTMLCommentCountElement extends Components.CommentCount, HTMLStencilElement {}
+  var HTMLCommentCountElement: {
+    prototype: HTMLCommentCountElement;
+    new (): HTMLCommentCountElement;
   };
 
-  interface HTMLDisqusCommentEmbedElement extends Components.DisqusCommentEmbed, HTMLStencilElement {}
-  var HTMLDisqusCommentEmbedElement: {
-    prototype: HTMLDisqusCommentEmbedElement;
-    new (): HTMLDisqusCommentEmbedElement;
+  interface HTMLCommentEmbedElement extends Components.CommentEmbed, HTMLStencilElement {}
+  var HTMLCommentEmbedElement: {
+    prototype: HTMLCommentEmbedElement;
+    new (): HTMLCommentEmbedElement;
   };
 
-  interface HTMLDisqusDiscussionEmbedElement extends Components.DisqusDiscussionEmbed, HTMLStencilElement {}
-  var HTMLDisqusDiscussionEmbedElement: {
-    prototype: HTMLDisqusDiscussionEmbedElement;
-    new (): HTMLDisqusDiscussionEmbedElement;
+  interface HTMLDiscussionEmbedElement extends Components.DiscussionEmbed, HTMLStencilElement {}
+  var HTMLDiscussionEmbedElement: {
+    prototype: HTMLDiscussionEmbedElement;
+    new (): HTMLDiscussionEmbedElement;
   };
 
   interface HTMLElementTagNameMap {
-    'disqus-comment-count': HTMLDisqusCommentCountElement
-    'disqus-comment-embed': HTMLDisqusCommentEmbedElement
-    'disqus-discussion-embed': HTMLDisqusDiscussionEmbedElement
+    'comment-count': HTMLCommentCountElement
+    'comment-embed': HTMLCommentEmbedElement
+    'discussion-embed': HTMLDiscussionEmbedElement
   }
 
   interface ElementTagNameMap {
-    'disqus-comment-count': HTMLDisqusCommentCountElement;
-    'disqus-comment-embed': HTMLDisqusCommentEmbedElement;
-    'disqus-discussion-embed': HTMLDisqusDiscussionEmbedElement;
+    'comment-count': HTMLCommentCountElement;
+    'comment-embed': HTMLCommentEmbedElement;
+    'discussion-embed': HTMLDiscussionEmbedElement;
   }
 
 
