@@ -17,7 +17,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@stencil/core": "~0.13.2"
+    "@stencil/core": "~0.13.2",
+    "workbox-build": "3.4.1"
   },
   "unpkg": "dist/disqus.js",
   "keywords": [
