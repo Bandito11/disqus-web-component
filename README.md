@@ -13,7 +13,7 @@ You can ```npm install web-component-disqus``` in your local project and add it 
 
 or just add it from UNPKG with local installation required:
 
-<script src="https://unpkg.com/web-component-disqus@0.0.1/dist/disqus.js"></script>
+<script src="https://unpkg.com/web-component-disqus@0.0.3/dist/disqus.js"></script>
 
 
 # How to use
