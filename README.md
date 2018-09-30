@@ -5,16 +5,17 @@
 
 # Installation
 
-How to use:
-
 You can ```npm install web-component-disqus``` in your local project and add it to the head of the index.html file like so:
 
+```html
 <script src="node_modules/web-component-disqus/dist/disqus.js"></script>
+```
 
 or just add it from UNPKG with local installation required:
 
+```html
 <script src="https://unpkg.com/web-component-disqus@0.0.3/dist/disqus.js"></script>
-
+```
 
 # How to use
 
@@ -69,4 +70,54 @@ Basic Usage:
     }
   </script>
 </body>
+```
+# How to add it to an Angular Project
+
+Use the installation described above.
+
+After choosing a component open the my-component.module.ts. Import the CUSTOM_ELEMENTS_SCHEMA from the '@angular/core' 'package.
+
+```typescript
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
+@NgModule({
+  imports: [
+    RouterModule.forChild([
+      {
+        path: '',
+        component: MyComponentPage
+      }
+    ])
+  ],
+  declarations: [MyComponentPage ],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA]
+})
+export class MyComponentModule { }
+```
+
+Now on a MyComponent.page.ts
+
+```typescript
+...
+
+export class HomePage implements OnInit {
+  myShortName = 'shortname';
+  myConfig = {
+    identifier: 'path/to/whenever',
+    url: 'http://home.myurl'
+  };
+
+  constructor() { }
+  
+  ...
+}
+
+```
+
+And on the MyComponent.page.ts
+
+```html
+
+<discussion-embed shortname="myShortName" config="myConfig"></discussion-embed>
+
 ```
