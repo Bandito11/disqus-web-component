@@ -1,5 +1,5 @@
 const RADIX_BASE = 36;
-import { Component, Prop } from '@stencil/core';
+import { Component, Prop, h } from '@stencil/core';
 
 @Component({
     tag: 'comment-embed'
@@ -27,7 +27,7 @@ export class CommentEmbed {
                 src={this.getSrc()}
                 width={this.width}
                 height={this.height}
-                seamless="seamless"
+                seamless={true}
                 scrolling="no"
                 frameBorder="0"
             />

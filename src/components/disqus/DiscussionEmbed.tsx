@@ -1,6 +1,6 @@
 import { insertScript, removeScript } from './utils';
 
-import { Component, Prop, Watch } from '@stencil/core';
+import { Component, Prop, Watch, h } from '@stencil/core';
 declare const window;
 @Component({
     tag: 'discussion-embed'

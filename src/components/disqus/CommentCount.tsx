@@ -1,5 +1,5 @@
 import { insertScript, removeScript, debounce } from './utils';
-import { Component, Prop, Watch } from '@stencil/core';
+import { Component, Prop, Watch, h } from '@stencil/core';
 declare const window;
 
 const queueResetCount = debounce(() => {
