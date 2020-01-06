@@ -1,6 +1,6 @@
 {
   "name": "web-component-disqus",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A web component based on the Disqus React Api and is not dependent on any JavaScript Library. Just add it to your project!",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
@@ -17,8 +17,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@stencil/core": "^1.8.4",
-    "workbox-build": "4.3.1"
+    "@stencil/core": "^1.8.4"
   },
   "unpkg": "dist/disqus.js",
   "keywords": [
