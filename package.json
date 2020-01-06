@@ -1,6 +1,6 @@
 {
   "name": "web-component-disqus",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A web component based on the Disqus React Api and is not dependent on any JavaScript Library. Just add it to your project!",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
